@@ -23,4 +23,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+*,:before ,:after{
+  box-sizing: border-box;
+}
 `;

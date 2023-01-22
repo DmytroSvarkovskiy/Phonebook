@@ -8,9 +8,15 @@ import {
 } from '@ant-design/icons';
 
 export const Nav = styled.nav`
-  border-bottom: 2px solid #3a97e8;
-  @media screen and(min-width:1200px) {
-    display: flex;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 0;
+  row-gap: 20px;
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+    height: 80px;
+    max-width: 1280px;
     gap: 30px;
     justify-content: space-between;
     height: 50px;
@@ -18,19 +24,21 @@ export const Nav = styled.nav`
   }
 `;
 export const Link = styled(NavLink)`
-  :nth-child(2n + 1) {
-    margin-right: 20px;
-  }
   &.active {
     color: #3a97e8;
-    border-top: 2px solid #3a97e8;
+    @media (min-width: 1280px) {
+      border-top: 2px solid #3a97e8;
+    }
   }
   text-decoration: none;
   color: inherit;
-  @media screen and(min-width:1200px) {
+  @media (min-width: 1280px) {
     font-size: 18px;
     font-weight: 600;
     padding: 11px 4px;
+    :nth-child(2n + 1) {
+      margin-right: 20px;
+    }
   }
 `;
 export const RegIcon = styled(IssuesCloseOutlined)`
@@ -45,4 +53,8 @@ export const HomeIcon = styled(HomeOutlined)`
 export const ContactIcon = styled(ContactsOutlined)`
   margin-right: 8px;
 `;
-export const Header = styled.header``;
+export const Header = styled.header`
+  @media (min-width: 1280px) {
+    border-bottom: 2px solid #3a97e8;
+  }
+`;

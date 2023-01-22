@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 export const Wrap = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  @media (min-width: 1280px) {
+    justify-content: center;
+    gap: 20px;
+  }
+`;
+export const P = styled.p`
+  max-width: 125px;
+  display: flex;
+  flex-wrap: wrap;
 `;
