@@ -9,7 +9,7 @@ export const Wrap = styled.div`
   }
 `;
 export const P = styled.p`
-  max-width: 125px;
+  width: 125px;
   display: flex;
   flex-wrap: wrap;
 `;
