@@ -5,16 +5,17 @@ import {
   LogInIcon,
   HomeIcon,
   ContactIcon,
-  Container,
+  Header,
 } from './AppBar.styled';
 import { Spiner } from 'pages/ContactList/ContactList.styled';
 import { UserMenu } from 'components/UserMenu/UserMenu';
 import { useSelector } from 'react-redux';
+import { Container } from '../Container';
 
 export const AppBar = () => {
   const { isLoaggedIn, isLoading } = useSelector(state => state.auth);
   return (
-    <header>
+    <Header>
       {isLoading && <Spiner />}
       <Container>
         <Nav>
@@ -48,6 +49,6 @@ export const AppBar = () => {
           </div>
         </Nav>
       </Container>
-    </header>
+    </Header>
   );
 };
