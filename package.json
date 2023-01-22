@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-08-phonebook",
+  "name": "phonebook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmytrosvarkovskiy.github.io/goit-react-hw-08-phonebook/",
+  "homepage": "https://dmytrosvarkovskiy.github.io/phonebook/",
   "dependencies": {
     "@ant-design/icons": "^5.0.0",
     "@reduxjs/toolkit": "^1.9.1",
