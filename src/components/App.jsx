@@ -25,7 +25,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route
+          <Route
             path="/contacts"
             element={
               <PrivateRoute component={<Contactlist />} redirectTo="/login" />
@@ -45,7 +45,7 @@ export const App = () => {
                 component={<Register />}
               />
             }
-          /> */}
+          />
         </Route>
       </Routes>
       <ToastContainer />

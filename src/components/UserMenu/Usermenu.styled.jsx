@@ -18,7 +18,7 @@ export const P = styled.p`
   }
   @media (min-width: 768px) {
     font-size: 18px;
-    margin: 0 15px;
+    margin: 0 20px;
   }
 `;
 export const WrapAvatarMail = styled.div`

@@ -1,7 +1,7 @@
 import {
   Title,
   HomeUserGroup,
-  Wrap,
+  WrapIcon,
   UnderTitle,
   HomeLink,
   Section,
@@ -19,12 +19,12 @@ export default function Home() {
       {' '}
       <Section>
         <Title>Wellcome to you PhoneBook</Title>
-        <Wrap>
+        <WrapIcon>
           {' '}
           <HomeEdit /> <HomePhoneIcon />
           <HomeUserGroup />
           <HomeContactList />
-        </Wrap>
+        </WrapIcon>
         {!isLoaggedIn ? (
           <UnderTitle>
             Please

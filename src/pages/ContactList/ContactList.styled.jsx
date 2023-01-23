@@ -11,6 +11,14 @@ export const ButtonRedact = styled(Button)`
   margin-left: auto;
 `;
 export const Item = styled.li`
+  @media (min-width: 320px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   background-color: #f5f6f7;
   padding-left: 10px;
   border-radius: 7px;
@@ -21,9 +29,11 @@ export const Item = styled.li`
   font-weight: 500;
 `;
 export const List = styled.ul`
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
 `;
 export const UserIcon = styled(UserSwitchOutlined)`
   color: #c7c6c6;
@@ -69,6 +79,6 @@ export const Title = styled.h2`
   margin: 20px auto;
   color: #2e2d2dbc;
 `;
-export const Container = styled.div`
+export const Wrap = styled.div`
   padding: 20px 0;
 `;

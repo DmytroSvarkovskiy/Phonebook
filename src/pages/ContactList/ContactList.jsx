@@ -11,8 +11,9 @@ import {
   DivName,
   Spiner,
   Title,
-  Container,
+  Wrap,
 } from './ContactList.styled';
+import { Container } from 'components/Container';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   deleteContact,
@@ -56,8 +57,9 @@ export default function Contactlist() {
     subscriber.name.toLowerCase().includes(filterData)
   );
   return (
-    <section>
-      <Container>
+    // <section>
+    <Container>
+      <Wrap>
         <div>
           {' '}
           {contacts.length < 1 ? (
@@ -118,7 +120,7 @@ export default function Contactlist() {
             />
           </ModalRedact>
         </List>
-      </Container>
-    </section>
+      </Wrap>
+    </Container>
   );
 }

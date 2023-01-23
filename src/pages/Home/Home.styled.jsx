@@ -9,16 +9,28 @@ import { Link } from 'react-router-dom';
 import { fadeInLeftBig } from 'react-animations';
 import img from '../../img/exampleList.png';
 const fadeAnimation = keyframes`${fadeInLeftBig}`;
+
 export const Title = styled.h1`
-  text-align: center;
-  margin-bottom: 30px;
   color: #2e2d2dbc;
+  text-align: center;
+  margin-bottom: 15px;
+  @media (min-width: 425px) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 `;
 
-export const Wrap = styled.div`
-  @media (min-width: 1280px) {
-    margin-bottom: 60px;
-    padding: 40px 0;
+export const WrapIcon = styled.div`
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  @media (min-width: 425px) {
+    margin-bottom: 50px;
+  }
+  @media (min-width: 768px) {
+    margin-bottom: 90px;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -28,7 +40,8 @@ export const UnderTitle = styled.h2`
   color: #2e2d2dbc;
   text-align: center;
   font-size: 28px;
-  height: 40px;
+  margin-bottom: 20px;
+  width: 100%;
 `;
 export const HomeLink = styled(Link)`
   text-decoration: none;
@@ -47,8 +60,6 @@ export const HomeLink = styled(Link)`
   }
 `;
 export const Section = styled.section`
-  padding-top: 40px;
-  height: 40em;
   background-image: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.96),
@@ -59,6 +70,14 @@ export const Section = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 30px;
+  @media (min-width: 425px) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 60px;
+  }
 `;
 export const HomeEdit = styled(EditOutlined)`
   animation: 2.5s ${fadeAnimation};
@@ -66,6 +85,16 @@ export const HomeEdit = styled(EditOutlined)`
     color: #1677ff;
     display: block;
     margin: 0 auto;
+    width: 71px;
+    height: 71px;
+    @media (min-width: 425px) {
+      width: 99px;
+      height: 99px;
+    }
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1280px) {
       width: 220px;
       height: 220px;
@@ -78,6 +107,16 @@ export const HomePhoneIcon = styled(PhoneOutlined)`
     color: #1677ff;
     display: block;
     margin: 0 auto;
+    width: 71px;
+    height: 71px;
+    @media (min-width: 425px) {
+      width: 99px;
+      height: 99px;
+    }
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1280px) {
       width: 220px;
       height: 220px;
@@ -90,6 +129,16 @@ export const HomeUserGroup = styled(UsergroupAddOutlined)`
     color: #1677ff;
     display: block;
     margin: 0 auto;
+    width: 71px;
+    height: 71px;
+    @media (min-width: 425px) {
+      width: 99px;
+      height: 99px;
+    }
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1280px) {
       width: 220px;
       height: 220px;
@@ -102,6 +151,16 @@ export const HomeContactList = styled(ContactsOutlined)`
     color: #1677ff;
     display: block;
     margin: 0 auto;
+    width: 71px;
+    height: 71px;
+    @media (min-width: 425px) {
+      width: 99px;
+      height: 99px;
+    }
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1280px) {
       width: 220px;
       height: 220px;

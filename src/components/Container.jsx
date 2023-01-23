@@ -6,7 +6,7 @@ export const Container = styled.div`
   /* overflow: hidden; */
 
   @media (min-width: 320px) {
-    max-width: 320px;
+    max-width: 100%;
   }
   @media (min-width: 425px) {
     max-width: 425px;
