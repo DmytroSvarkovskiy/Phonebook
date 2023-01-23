@@ -2,14 +2,28 @@ import styled from 'styled-components';
 export const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  @media (min-width: 1280px) {
+  @media (min-width: 768px) {
+    align-items: center;
     justify-content: center;
-    gap: 20px;
   }
 `;
 export const P = styled.p`
-  width: 125px;
-  display: flex;
+  display: none;
+  height: auto;
   flex-wrap: wrap;
+  @media (min-width: 425px) {
+    font-size: 16px;
+    display: flex;
+    margin-top: 5px;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+`;
+export const WrapAvatarMail = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 `;

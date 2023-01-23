@@ -16,11 +16,13 @@ export const Title = styled.h1`
 `;
 
 export const Wrap = styled.div`
-  margin-bottom: 60px;
-  padding: 40px 0;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
+  @media (min-width: 1280px) {
+    margin-bottom: 60px;
+    padding: 40px 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
 `;
 export const UnderTitle = styled.h2`
   color: #2e2d2dbc;
@@ -62,20 +64,24 @@ export const HomeEdit = styled(EditOutlined)`
   animation: 2.5s ${fadeAnimation};
   svg {
     color: #1677ff;
-    width: 220px;
     display: block;
-    height: 220px;
     margin: 0 auto;
+    @media (min-width: 1280px) {
+      width: 220px;
+      height: 220px;
+    }
   }
 `;
 export const HomePhoneIcon = styled(PhoneOutlined)`
   animation: 2s ${fadeAnimation};
   svg {
     color: #1677ff;
-    width: 220px;
     display: block;
-    height: 220px;
     margin: 0 auto;
+    @media (min-width: 1280px) {
+      width: 220px;
+      height: 220px;
+    }
   }
 `;
 export const HomeUserGroup = styled(UsergroupAddOutlined)`
@@ -83,18 +89,22 @@ export const HomeUserGroup = styled(UsergroupAddOutlined)`
   svg {
     color: #1677ff;
     display: block;
-    height: 220px;
     margin: 0 auto;
-    width: 250px;
+    @media (min-width: 1280px) {
+      width: 220px;
+      height: 220px;
+    }
   }
 `;
 export const HomeContactList = styled(ContactsOutlined)`
   animation: 1s ${fadeAnimation};
   svg {
     color: #1677ff;
-    width: 220px;
     display: block;
-    height: 220px;
     margin: 0 auto;
+    @media (min-width: 1280px) {
+      width: 220px;
+      height: 220px;
+    }
   }
 `;

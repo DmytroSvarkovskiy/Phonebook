@@ -6,6 +6,8 @@ import {
   HomeIcon,
   ContactIcon,
   Header,
+  WrapHomeContact,
+  WrapRegLogIn,
 } from './AppBar.styled';
 import { Spiner } from 'pages/ContactList/ContactList.styled';
 import { UserMenu } from 'components/UserMenu/UserMenu';
@@ -19,7 +21,7 @@ export const AppBar = () => {
       {isLoading && <Spiner />}
       <Container>
         <Nav>
-          <div>
+          <WrapHomeContact>
             <Link to="/">
               <HomeIcon />
               Home
@@ -30,12 +32,12 @@ export const AppBar = () => {
                 Contacts
               </Link>
             )}
-          </div>
+          </WrapHomeContact>
           <div>
             {isLoaggedIn ? (
               <UserMenu />
             ) : (
-              <>
+              <WrapRegLogIn>
                 <Link to="/register">
                   <RegIcon />
                   Register
@@ -44,7 +46,7 @@ export const AppBar = () => {
                   <LogInIcon />
                   Log in
                 </Link>
-              </>
+              </WrapRegLogIn>
             )}
           </div>
         </Nav>
