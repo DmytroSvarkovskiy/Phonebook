@@ -7,32 +7,40 @@ import {
 } from '@ant-design/icons';
 
 export const ButtonRedact = styled(Button)`
-  margin-right: 8px;
-  margin-left: auto;
+  margin-right: 20px;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
 `;
 export const Item = styled.li`
   @media (min-width: 320px) {
     display: flex;
+    gap: 15px;
     flex-wrap: wrap;
+    background-color: #f5f6f7;
+    border-radius: 7px;
+    padding: 2px;
+  }
+  @media (min-width: 425px) {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
   }
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
-  background-color: #f5f6f7;
-  padding-left: 10px;
-  border-radius: 7px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 20px;
-  font-weight: 500;
 `;
 export const List = styled.ul`
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
   @media (min-width: 768px) {
-    display: flex;
-    gap: 15px;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 `;
 export const UserIcon = styled(UserSwitchOutlined)`
@@ -67,7 +75,7 @@ export const PhoneiconList = styled(PhoneOutlined)`
   color: #1677ff;
 `;
 export const DivName = styled.div`
-  min-width: 220px;
+  display: flex;
 `;
 export const Spiner = styled(Spin)`
   position: absolute;
@@ -81,4 +89,15 @@ export const Title = styled.h2`
 `;
 export const Wrap = styled.div`
   padding: 20px 0;
+`;
+export const BtnWrap = styled.div`
+  margin-right: auto;
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+`;
+export const NameSpan = styled.span`
+  @media (min-width: 768px) {
+    width: 220px;
+  }
 `;

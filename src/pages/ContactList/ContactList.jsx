@@ -12,6 +12,8 @@ import {
   Spiner,
   Title,
   Wrap,
+  BtnWrap,
+  NameSpan,
 } from './ContactList.styled';
 import { Container } from 'components/Container';
 import { useDispatch, useSelector } from 'react-redux';
@@ -57,70 +59,73 @@ export default function Contactlist() {
     subscriber.name.toLowerCase().includes(filterData)
   );
   return (
-    // <section>
-    <Container>
-      <Wrap>
-        <div>
-          {' '}
-          {contacts.length < 1 ? (
-            <Title>Add you firs contact</Title>
-          ) : (
-            <Filter />
-          )}
-          <ContactForm />
-          {isLoading && <Spiner />}
-        </div>
-        <List>
-          {visibleContacts.map(({ id, name, number }) => (
-            <Item key={id}>
-              <DivName>
-                <UserIconList />
-                {name}:
-              </DivName>
-              <PhoneiconList /> {number}
-              <ButtonRedact
-                onClick={() => showModal(name, number, id)}
-                title="Edit contatc"
-              >
-                <EditOutlined />
-                Redact
-              </ButtonRedact>
-              <Popconfirm
-                title="Are you sure delete this task?"
-                okText="Yes"
-                cancelText="No"
-                onConfirm={() => dispatch(deleteContact(id))}
-              >
-                <Button title="delete contatc" type="primary">
-                  <DeleteOutlined /> Delete
-                </Button>
-              </Popconfirm>
-            </Item>
-          ))}
-          <ModalRedact
-            title="Edit a contact"
-            open={isModalOpen}
-            onOk={handleOk}
-            onCancel={handleCancel}
-          >
-            <InputForm
-              prefix={<UserIcon />}
-              value={subName}
-              onChange={e => {
-                setSubName(e.target.value);
-              }}
-            />
-            <InputForm
-              prefix={<PhoneIcon />}
-              value={subNumber}
-              onChange={e => {
-                setSubNumber(e.target.value);
-              }}
-              pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            />
-          </ModalRedact>
-        </List>
-      </Wrap>
-    </Container>
+    <section>
+      <Container>
+        <Wrap>
+          <div>
+            {' '}
+            {contacts.length < 1 ? (
+              <Title>Add you firs contact</Title>
+            ) : (
+              <Filter />
+            )}
+            <ContactForm />
+            {isLoading && <Spiner />}
+          </div>
+          <List>
+            {visibleContacts.map(({ id, name, number }) => (
+              <Item key={id}>
+                <DivName>
+                  <UserIconList />
+                  <NameSpan> {name}:</NameSpan>
+                  <PhoneiconList /> {number}{' '}
+                </DivName>
+                <BtnWrap>
+                  <ButtonRedact
+                    onClick={() => showModal(name, number, id)}
+                    title="Edit contatc"
+                  >
+                    <EditOutlined />
+                    Redact
+                  </ButtonRedact>
+                  <Popconfirm
+                    title="Are you sure delete this task?"
+                    okText="Yes"
+                    cancelText="No"
+                    onConfirm={() => dispatch(deleteContact(id))}
+                  >
+                    <Button title="delete contatc" type="primary">
+                      <DeleteOutlined /> Delete
+                    </Button>
+                  </Popconfirm>
+                </BtnWrap>
+              </Item>
+            ))}
+            <ModalRedact
+              title="Edit a contact"
+              open={isModalOpen}
+              onOk={handleOk}
+              onCancel={handleCancel}
+            >
+              <InputForm
+                prefix={<UserIcon />}
+                value={subName}
+                onChange={e => {
+                  setSubName(e.target.value);
+                }}
+              />
+              <InputForm
+                prefix={<PhoneIcon />}
+                value={subNumber}
+                onChange={e => {
+                  setSubNumber(e.target.value);
+                }}
+                pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+              />
+            </ModalRedact>
+          </List>
+        </Wrap>
+      </Container>
+    </section>
   );
 }
