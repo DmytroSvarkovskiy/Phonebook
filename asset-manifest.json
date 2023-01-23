@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/phonebook/static/css/main.b0e350f9.css",
-    "main.js": "/phonebook/static/js/main.6d4f9afa.js",
+    "main.js": "/phonebook/static/js/main.7d0fc50e.js",
     "static/js/902.5ea0182f.chunk.js": "/phonebook/static/js/902.5ea0182f.chunk.js",
-    "static/js/485.dc7398e5.chunk.js": "/phonebook/static/js/485.dc7398e5.chunk.js",
+    "static/js/485.06366792.chunk.js": "/phonebook/static/js/485.06366792.chunk.js",
     "static/js/172.f970ef4b.chunk.js": "/phonebook/static/js/172.f970ef4b.chunk.js",
-    "static/js/325.daf9aca6.chunk.js": "/phonebook/static/js/325.daf9aca6.chunk.js",
+    "static/js/325.9c27748c.chunk.js": "/phonebook/static/js/325.9c27748c.chunk.js",
     "static/js/972.e9bbb710.chunk.js": "/phonebook/static/js/972.e9bbb710.chunk.js",
     "static/js/273.33c08030.chunk.js": "/phonebook/static/js/273.33c08030.chunk.js",
     "static/media/exampleList.png": "/phonebook/static/media/exampleList.ae633b879812e2a701e7.png",
     "index.html": "/phonebook/index.html",
     "main.b0e350f9.css.map": "/phonebook/static/css/main.b0e350f9.css.map",
-    "main.6d4f9afa.js.map": "/phonebook/static/js/main.6d4f9afa.js.map",
+    "main.7d0fc50e.js.map": "/phonebook/static/js/main.7d0fc50e.js.map",
     "902.5ea0182f.chunk.js.map": "/phonebook/static/js/902.5ea0182f.chunk.js.map",
-    "485.dc7398e5.chunk.js.map": "/phonebook/static/js/485.dc7398e5.chunk.js.map",
+    "485.06366792.chunk.js.map": "/phonebook/static/js/485.06366792.chunk.js.map",
     "172.f970ef4b.chunk.js.map": "/phonebook/static/js/172.f970ef4b.chunk.js.map",
-    "325.daf9aca6.chunk.js.map": "/phonebook/static/js/325.daf9aca6.chunk.js.map",
+    "325.9c27748c.chunk.js.map": "/phonebook/static/js/325.9c27748c.chunk.js.map",
     "972.e9bbb710.chunk.js.map": "/phonebook/static/js/972.e9bbb710.chunk.js.map",
     "273.33c08030.chunk.js.map": "/phonebook/static/js/273.33c08030.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0e350f9.css",
-    "static/js/main.6d4f9afa.js"
+    "static/js/main.7d0fc50e.js"
   ]
 }
