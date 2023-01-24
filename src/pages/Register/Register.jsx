@@ -63,7 +63,6 @@ export default function Register() {
               label="E-mail"
               rules={[
                 {
-                  type: 'email',
                   message: 'The input is not valid E-mail!',
                 },
                 {

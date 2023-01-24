@@ -40,7 +40,6 @@ export default function Login() {
                 {
                   required: true,
                   message: 'Please input your Email!',
-                  // type: 'email',
                 },
               ]}
             >
