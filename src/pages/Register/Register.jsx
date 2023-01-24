@@ -72,7 +72,7 @@ export default function Register() {
                 },
               ]}
             >
-              <InputReg prefix={<RegMail />} />
+              <InputReg prefix={<RegMail />} type="email" />
             </Label>
             <Label
               name="password"
