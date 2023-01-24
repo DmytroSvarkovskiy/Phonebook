@@ -34,7 +34,6 @@ export const Link = styled(NavLink)`
     @media (min-width: 768px) {
       outline: none;
       border-radius: 0;
-
       border-top: 2px solid #3a97e8;
     }
   }
@@ -44,7 +43,8 @@ export const Link = styled(NavLink)`
     outline: none;
     font-size: 18px;
     font-weight: 600;
-    padding: 11px 4px;
+    padding: 14px 4px;
+
     :nth-child(2n + 1) {
       margin-right: 20px;
     }
