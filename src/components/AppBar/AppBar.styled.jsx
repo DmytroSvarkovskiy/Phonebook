@@ -43,7 +43,7 @@ export const Link = styled(NavLink)`
     outline: none;
     font-size: 18px;
     font-weight: 600;
-    padding: 14px 4px;
+    padding: 13px 4px;
 
     :nth-child(2n + 1) {
       margin-right: 20px;
