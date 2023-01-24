@@ -60,10 +60,14 @@ export const InputForm = styled(Input)`
 export const ModalRedact = styled(Modal)`
   text-align: center;
   .ant-modal-content {
-    width: 330px;
     position: absolute;
-    top: 50%;
-    left: 20%;
+    width: 290px;
+    top: 600%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (min-width: 768px) {
+      width: 330px;
+    }
   }
 `;
 export const UserIconList = styled(UserOutlined)`
