@@ -40,11 +40,15 @@ export default function Login() {
                 {
                   required: true,
                   message: 'Please input your Email!',
-                  type: 'email',
+                  // type: 'email',
                 },
               ]}
             >
-              <InputForm prefix={<UserIcon />} placeholder="Email" />
+              <InputForm
+                prefix={<UserIcon />}
+                placeholder="Email"
+                type="email"
+              />
             </FormWrap.Item>
             <FormWrap.Item
               name="password"
